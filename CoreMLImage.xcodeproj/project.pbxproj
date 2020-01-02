@@ -10,6 +10,7 @@
 		54FE8D501FE93E41007A5C37 /* CoreMLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE8D4F1FE93E41007A5C37 /* CoreMLImage.swift */; };
 		54FE8D521FE93E70007A5C37 /* CoreMLImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FE8D511FE93E70007A5C37 /* CoreMLImageManager.swift */; };
 		54FE8D541FE93EC5007A5C37 /* CoreMLImageModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 54FE8D531FE93EC5007A5C37 /* CoreMLImageModule.m */; };
+		DC06045040D67D1B55970053 /* Pods_CoreMLImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BD924D6C805077DA386712 /* Pods_CoreMLImage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,10 +27,13 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libCoreMLImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCoreMLImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4BF5AC13B2222F61F990ABC1 /* Pods-CoreMLImage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLImage.debug.xcconfig"; path = "Target Support Files/Pods-CoreMLImage/Pods-CoreMLImage.debug.xcconfig"; sourceTree = "<group>"; };
 		54FE8D4E1FE93E40007A5C37 /* CoreMLImage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreMLImage-Bridging-Header.h"; sourceTree = "<group>"; };
 		54FE8D4F1FE93E41007A5C37 /* CoreMLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLImage.swift; sourceTree = "<group>"; };
 		54FE8D511FE93E70007A5C37 /* CoreMLImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLImageManager.swift; sourceTree = "<group>"; };
 		54FE8D531FE93EC5007A5C37 /* CoreMLImageModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreMLImageModule.m; sourceTree = "<group>"; };
+		ACBB77E7BFD7685DE079DEA6 /* Pods-CoreMLImage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreMLImage.release.xcconfig"; path = "Target Support Files/Pods-CoreMLImage/Pods-CoreMLImage.release.xcconfig"; sourceTree = "<group>"; };
+		F8BD924D6C805077DA386712 /* Pods_CoreMLImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreMLImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC06045040D67D1B55970053 /* Pods_CoreMLImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,11 +64,31 @@
 				54FE8D4F1FE93E41007A5C37 /* CoreMLImage.swift */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				54FE8D4E1FE93E40007A5C37 /* CoreMLImage-Bridging-Header.h */,
+				E153DFCCFB359B37740CF817 /* Pods */,
+				9A5E39596784412AD79DC3A4 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
 			tabWidth = 2;
 			usesTabs = 0;
+		};
+		9A5E39596784412AD79DC3A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8BD924D6C805077DA386712 /* Pods_CoreMLImage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E153DFCCFB359B37740CF817 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BF5AC13B2222F61F990ABC1 /* Pods-CoreMLImage.debug.xcconfig */,
+				ACBB77E7BFD7685DE079DEA6 /* Pods-CoreMLImage.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -72,6 +97,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58B511EF1A9E6C8500147676 /* Build configuration list for PBXNativeTarget "CoreMLImage" */;
 			buildPhases = (
+				7E7CECB60E749F6B2CDA267F /* [CP] Check Pods Manifest.lock */,
 				58B511D71A9E6C8500147676 /* Sources */,
 				58B511D81A9E6C8500147676 /* Frameworks */,
 				58B511D91A9E6C8500147676 /* CopyFiles */,
@@ -116,6 +142,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E7CECB60E749F6B2CDA267F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreMLImage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -207,6 +258,7 @@
 		};
 		58B511F01A9E6C8500147676 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BF5AC13B2222F61F990ABC1 /* Pods-CoreMLImage.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
@@ -228,6 +280,7 @@
 		};
 		58B511F11A9E6C8500147676 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACBB77E7BFD7685DE079DEA6 /* Pods-CoreMLImage.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				HEADER_SEARCH_PATHS = (
